@@ -1,6 +1,6 @@
 //Maya ASCII 2022 scene
 //Name: Astro.ma
-//Last modified: Thu, Sep 26, 2024 07:59:31 PM
+//Last modified: Thu, Sep 26, 2024 08:04:32 PM
 //Codeset: 1252
 requires maya "2022";
 requires "mtoa" "5.0.0.4";
@@ -10,18 +10,18 @@ fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202405021833-753375ecb3";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 22631)";
-fileInfo "UUID" "19FAC791-434C-CCE5-F278-9680A14C9AC0";
+fileInfo "UUID" "FFE7B046-429A-0594-99B2-3784D1809497";
 createNode transform -s -n "persp";
 	rename -uid "50AEED8D-4902-CA32-D989-FB9AFD66605C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 34.010292573148263 25.331404447234771 46.353427793375893 ;
-	setAttr ".r" -type "double3" 345.60000000323066 394.79999999994635 0 ;
+	setAttr ".t" -type "double3" 10.045644546957506 19.456517097440599 38.560295566114526 ;
+	setAttr ".r" -type "double3" 350.40000000265741 1450.3999999998325 1.0105247736952654e-16 ;
 	setAttr ".rpt" -type "double3" -1.7033654347740731e-15 9.3656894774382581e-16 9.9848300806315385e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C1800C8B-4704-83B8-72FB-1B8205301651";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 60.651078513774955;
+	setAttr ".coi" 38.672835086608607;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -20977,6 +20977,27 @@ createNode polySoftEdge -n "polySoftEdge3";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[*]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
+createNode polyExtrudeFace -n "polyExtrudeFace38";
+	rename -uid "CD931E59-47EA-A1D0-EDFC-CAA82A4C55D8";
+	setAttr ".ics" -type "componentList" 2 "f[2129]" "f[3339]";
+	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" 0 18.857189 0.50149536 ;
+	setAttr ".rs" 41221;
+	setAttr ".lt" -type "double3" 8.5780437554391078e-17 -5.1783348841000759e-15 -0.090082209513238004 ;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" -2.348203182220459 18.528301239013672 0.17260539531707764 ;
+	setAttr ".cbx" -type "double3" 2.348203182220459 19.186079025268555 0.83038538694381714 ;
+createNode groupParts -n "groupParts42";
+	rename -uid "6DD985F0-4C88-007E-E3E8-5B8C8E446292";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 225 "f[88]" "f[92]" "f[95]" "f[98]" "f[101]" "f[104]" "f[107]" "f[110]" "f[113]" "f[116]" "f[119]" "f[122]" "f[125]" "f[128]" "f[131]" "f[134]" "f[137]" "f[140]" "f[143]" "f[145:205]" "f[226:245]" "f[266:285]" "f[320:321]" "f[328:368]" "f[371]" "f[373]" "f[375:379]" "f[381:385]" "f[390:395]" "f[399:403]" "f[407:410]" "f[414:415]" "f[417:418]" "f[422:425]" "f[429:430]" "f[432:433]" "f[437:440]" "f[444:445]" "f[447:448]" "f[452:455]" "f[459:460]" "f[462:463]" "f[467:534]" "f[537]" "f[539]" "f[541:545]" "f[547:551]" "f[556:561]" "f[565:569]" "f[573:576]" "f[580:581]" "f[583:584]" "f[588:591]" "f[595:596]" "f[598:599]" "f[603:606]" "f[610:611]" "f[613:614]" "f[618:621]" "f[625:626]" "f[628:629]" "f[633:700]" "f[703:711]" "f[713:716]" "f[720:773]" "f[776]" "f[778]" "f[780:784]" "f[786:789]" "f[794:1199]" "f[1220:1259]" "f[1315:1474]" "f[1477:1516]" "f[1519:1553]" "f[1556]" "f[1559]" "f[1561]" "f[1564:1565]" "f[1571]" "f[1580:1587]" "f[1589:1591]" "f[1593]" "f[1595:1601]" "f[1603:1607]" "f[1609:1613]" "f[1615]" "f[1618:1622]" "f[1629:1631]" "f[1633:1635]" "f[1638]" "f[1656:1657]" "f[1659:1664]" "f[1666:1667]" "f[1669:1672]" "f[1674:1675]" "f[1678]" "f[1681]" "f[1684:1685]" "f[1687:1692]" "f[1694:1708]" "f[1714:1715]" "f[1717:1731]" "f[1733]" "f[1736:1741]" "f[1743:1746]" "f[1748]" "f[1754]" "f[1756:1758]" "f[1760]" "f[1764:1771]" "f[1773:1775]" "f[1781:1782]" "f[1785]" "f[1787:1833]" "f[1842:1843]" "f[1845:1846]" "f[1848:1861]" "f[1879:1896]" "f[1912]" "f[1914:1916]" "f[1919:1921]" "f[1923]" "f[1925]" "f[1927:1928]" "f[1930]" "f[1932:1934]" "f[1936:1938]" "f[1940]" "f[1943]" "f[2129]" "f[2158]" "f[2163]" "f[2168]" "f[2173]" "f[2249:2250]" "f[2372:2389]" "f[2432:2575]" "f[2600:2629]" "f[2631]" "f[2657:2722]" "f[2725:2726]" "f[2728:2765]" "f[2768]" "f[2771]" "f[2773]" "f[2776:2777]" "f[2783]" "f[2791:2792]" "f[2797:2802]" "f[2804:2806]" "f[2808]" "f[2810:2816]" "f[2818:2827]" "f[2829]" "f[2832:2836]" "f[2843:2845]" "f[2847:2849]" "f[2852]" "f[2871:2872]" "f[2874:2879]" "f[2881:2882]" "f[2884:2887]" "f[2889:2890]" "f[2893]" "f[2896]" "f[2899:2900]" "f[2902:2907]" "f[2909:2923]" "f[2929:2930]" "f[2932:2947]" "f[2950:2959]" "f[2961]" "f[2967]" "f[2969:2971]" "f[2973]" "f[2977:2984]" "f[2986:2988]" "f[2995:2996]" "f[2999]" "f[3001:3047]" "f[3054:3055]" "f[3057:3058]" "f[3060:3073]" "f[3091:3108]" "f[3124]" "f[3126:3128]" "f[3131:3133]" "f[3135]" "f[3137]" "f[3139:3140]" "f[3142]" "f[3144:3146]" "f[3148:3150]" "f[3152]" "f[3155]" "f[3339]" "f[3368]" "f[3373]" "f[3378]" "f[3383]" "f[3459:3460]" "f[3576:3593]" "f[3636:3779]" "f[3804:3833]" "f[3835]" "f[3861:3926]" "f[3929:3930]" "f[3932:3936]" "f[3946:3947]" "f[3966:3984]" "f[3988:3989]" "f[3996]" "f[4011:4029]" "f[4035:4036]" "f[4042]" "f[4075:4118]" "f[4155:4198]" "f[4235:4278]" "f[4315:4358]" "f[4375:4430]" "f[4533]" "f[4544]" "f[4839:4863]" "f[4865:4867]" "f[4869:4884]";
+	setAttr ".irc" -type "componentList" 43 "f[1970]" "f[1974]" "f[1977]" "f[1980]" "f[1983]" "f[1986]" "f[1989]" "f[1992]" "f[1995]" "f[1998]" "f[2001]" "f[2004]" "f[2007]" "f[2010]" "f[2013]" "f[2016]" "f[2019]" "f[2022]" "f[2025]" "f[2027:2087]" "f[2108:2127]" "f[3180]" "f[3184]" "f[3187]" "f[3190]" "f[3193]" "f[3196]" "f[3199]" "f[3202]" "f[3205]" "f[3208]" "f[3211]" "f[3214]" "f[3217]" "f[3220]" "f[3223]" "f[3226]" "f[3229]" "f[3232]" "f[3235]" "f[3237:3297]" "f[3318:3337]" "f[4885:4924]";
+createNode groupParts -n "groupParts43";
+	rename -uid "F901C8DE-49F6-4077-F173-58871B6769B2";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 43 "f[1970]" "f[1974]" "f[1977]" "f[1980]" "f[1983]" "f[1986]" "f[1989]" "f[1992]" "f[1995]" "f[1998]" "f[2001]" "f[2004]" "f[2007]" "f[2010]" "f[2013]" "f[2016]" "f[2019]" "f[2022]" "f[2025]" "f[2027:2087]" "f[2108:2127]" "f[3180]" "f[3184]" "f[3187]" "f[3190]" "f[3193]" "f[3196]" "f[3199]" "f[3202]" "f[3205]" "f[3208]" "f[3211]" "f[3214]" "f[3217]" "f[3220]" "f[3223]" "f[3226]" "f[3229]" "f[3232]" "f[3235]" "f[3237:3297]" "f[3318:3337]" "f[4885:4924]";
+	setAttr ".irc" -type "componentList" 2 "f[2129]" "f[3339]";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -21129,7 +21150,7 @@ connectAttr "groupId43.id" "|polySurface7|transform25|polySurface7Shape.iog.og[2
 		;
 connectAttr "standardSurface2SG.mwc" "|polySurface7|transform25|polySurface7Shape.iog.og[2].gco"
 		;
-connectAttr "polySoftEdge3.out" "|polySurface11|polySurface7Shape.i";
+connectAttr "groupParts43.og" "|polySurface11|polySurface7Shape.i";
 connectAttr "groupId45.id" "|polySurface11|polySurface7Shape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "|polySurface11|polySurface7Shape.iog.og[0].gco"
 		;
@@ -23645,6 +23666,12 @@ connectAttr "groupParts41.og" "polySoftEdge2.ip";
 connectAttr "|polySurface11|polySurface7Shape.wm" "polySoftEdge2.mp";
 connectAttr "polySoftEdge2.out" "polySoftEdge3.ip";
 connectAttr "|polySurface11|polySurface7Shape.wm" "polySoftEdge3.mp";
+connectAttr "polySoftEdge3.out" "polyExtrudeFace38.ip";
+connectAttr "|polySurface11|polySurface7Shape.wm" "polyExtrudeFace38.mp";
+connectAttr "polyExtrudeFace38.out" "groupParts42.ig";
+connectAttr "groupId46.id" "groupParts42.gi";
+connectAttr "groupParts42.og" "groupParts43.ig";
+connectAttr "groupId45.id" "groupParts43.gi";
 connectAttr "Human_BaseMeshSG.pa" ":renderPartition.st" -na;
 connectAttr "standardSurface1SG.pa" ":renderPartition.st" -na;
 connectAttr "standardSurface2SG.pa" ":renderPartition.st" -na;
